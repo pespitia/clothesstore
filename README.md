@@ -6,3 +6,5 @@ La base de datos utilizada en el desarrollo del proyecto fue Oracle 18c. El scri
 
 # Postman
 Los servicios API Rest fueron documentados en Postman, en donde se adiciono un ejemplo para ilustrar la forma en que se debe hacer el llamado de cada uno de los servicios.
+
+File: Experimentality.postman_collection.json

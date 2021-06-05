@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "379fd9fe-157c-4922-ba31-8c7e000896ef",
+		"name": "Experimentality",
+		"description": "Servicios API REST para la compañía Clothesstore LATAM.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{domainName}}/clothesstore-services/rest/manageproduct/test",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{domainName}}"
+					],
+					"path": [
+						"clothesstore-services",
+						"rest",
+						"manageproduct",
+						"test"
+					]
+				},
+				"description": "Servicio de prueba para verificar que se tiene conexión al servidor de aplicaciones."
+			},
+			"response": [
+				{
+					"name": "ok_20210604",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/clothesstore-services/rest/manageproduct/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"clothesstore-services",
+								"rest",
+								"manageproduct",
+								"test"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "raw",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "access-control-allow-headers, origin, content-type, accept, authorization, application/json, multipart/form-data, text/plain, */*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/octet-stream"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, OPTIONS, HEAD, PUT, POST"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jun 2021 16:55:48 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "API REST Test"
+				}
+			]
+		},
+		{
+			"name": "morepopular",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{domainName}}/clothesstore-services/rest/manageproduct/morepopular",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{domainName}}"
+					],
+					"path": [
+						"clothesstore-services",
+						"rest",
+						"manageproduct",
+						"morepopular"
+					]
+				},
+				"description": "Servicio API REST que lista los productos más buscados."
+			},
+			"response": [
+				{
+					"name": "ok_20210605",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/clothesstore-services/rest/manageproduct/morepopular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"clothesstore-services",
+								"rest",
+								"manageproduct",
+								"morepopular"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "access-control-allow-headers, origin, content-type, accept, authorization, application/json, multipart/form-data, text/plain, */*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "160"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, OPTIONS, HEAD, PUT, POST"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Jun 2021 03:00:07 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"description\": \"Blusa color s\\ufffdlido manga larga\",\n        \"id\": \"1\",\n        \"imageBack\": \"\",\n        \"imageFront\": \"\",\n        \"name\": \"Blusa\",\n        \"popularSearch\": true,\n        \"price\": 200.452,\n        \"rateDiscount\": 50\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "productbyid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{domainName}}/clothesstore-services/rest/manageproduct/productbyid?id=1",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{domainName}}"
+					],
+					"path": [
+						"clothesstore-services",
+						"rest",
+						"manageproduct",
+						"productbyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Servicio API REST útil para buscar un producto por el id."
+			},
+			"response": [
+				{
+					"name": "parameterEmpty",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/clothesstore-services/rest/manageproduct/productbyid?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"clothesstore-services",
+								"rest",
+								"manageproduct",
+								"productbyid"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "access-control-allow-headers, origin, content-type, accept, authorization, application/json, multipart/form-data, text/plain, */*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, OPTIONS, HEAD, PUT, POST"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Jun 2021 04:00:59 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The name parameter is empty.\",\n    \"status\": 400\n}"
+				},
+				{
+					"name": "ok_20210605",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/clothesstore-services/rest/manageproduct/productbyid?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"clothesstore-services",
+								"rest",
+								"manageproduct",
+								"productbyid"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "access-control-allow-headers, origin, content-type, accept, authorization, application/json, multipart/form-data, text/plain, */*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "228"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, OPTIONS, HEAD, PUT, POST"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Jun 2021 05:41:29 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Process successfully executed\",\n    \"response\": [\n        {\n            \"description\": \"Blusa color s\\ufffdlido manga larga\",\n            \"id\": \"1\",\n            \"imageBack\": \"\",\n            \"imageFront\": \"\",\n            \"name\": \"Blusa\",\n            \"popularSearch\": true,\n            \"price\": 200.452,\n            \"rateDiscount\": 50\n        }\n    ],\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "productbyname",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{domainName}}/clothesstore-services/rest/manageproduct/productbyname?name=blusa",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{domainName}}"
+					],
+					"path": [
+						"clothesstore-services",
+						"rest",
+						"manageproduct",
+						"productbyname"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "blusa"
+						}
+					]
+				},
+				"description": "Servicio API REST útil para buscar productos por el nombre."
+			},
+			"response": [
+				{
+					"name": "ok_20210605",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/clothesstore-services/rest/manageproduct/productbyname?name=blusa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"clothesstore-services",
+								"rest",
+								"manageproduct",
+								"productbyname"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "blusa"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "access-control-allow-headers, origin, content-type, accept, authorization, application/json, multipart/form-data, text/plain, */*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "228"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, OPTIONS, HEAD, PUT, POST"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Jun 2021 05:42:41 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Process successfully executed\",\n    \"response\": [\n        {\n            \"description\": \"Blusa color s\\ufffdlido manga larga\",\n            \"id\": \"1\",\n            \"imageBack\": \"\",\n            \"imageFront\": \"\",\n            \"name\": \"Blusa\",\n            \"popularSearch\": true,\n            \"price\": 200.452,\n            \"rateDiscount\": 50\n        }\n    ],\n    \"status\": 200\n}"
+				}
+			]
+		}
+	]
+}
